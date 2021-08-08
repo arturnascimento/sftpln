@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SoftplanApi1</name>
+    </assembly>
+    <members>
+        <member name="T:SoftplanApi1.Controllers.taxaJurosController">
+            <summary>
+            Endpoint responsável por retornar a taxa de juros que deverá ser consumida pela Api2.
+            </summary>
+        </member>
+    </members>
+</doc>

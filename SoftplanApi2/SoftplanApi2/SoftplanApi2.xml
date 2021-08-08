@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SoftplanApi2</name>
+    </assembly>
+    <members>
+        <member name="T:SoftplanApi2.Controllers.calculaJurosController">
+            <summary>
+            Endpoint responsável por retornar um cálculo de juros. O usuário deverá informar o valor e o tempo em meses.
+            </summary>
+        </member>
+        <member name="M:SoftplanApi2.Controllers.showmethecodeController.GetLink">
+            <summary>
+            Endpoint responsável por retornar o repositório do GitHub.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
