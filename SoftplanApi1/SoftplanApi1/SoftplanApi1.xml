@@ -4,10 +4,11 @@
         <name>SoftplanApi1</name>
     </assembly>
     <members>
-        <member name="T:SoftplanApi1.Controllers.taxaJurosController">
+        <member name="M:SoftplanApi1.Controllers.taxaJurosController.Get">
             <summary>
             Endpoint responsável por retornar a taxa de juros que deverá ser consumida pela Api2.
             </summary>
+            <returns></returns>
         </member>
     </members>
 </doc>

@@ -10,7 +10,7 @@ namespace SoftplanApi2.Controllers
     /// <summary>
     /// Endpoint responsável por retornar um cálculo de juros. O usuário deverá informar o valor e o tempo em meses.
     /// </summary>
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class calculaJurosController : ControllerBase
     {
@@ -18,7 +18,7 @@ namespace SoftplanApi2.Controllers
         public static async Task<Juros> GetJuros()//método assíncrono que busca a taxa de juros na Api1
         {
             HttpClient client = new HttpClient();//cliente é um objeto do tipo HttpClient
-            var response = await client.GetAsync("https://localhost:44399/api/taxaJuros");//response recebe o resultado do metodo GetAsync, recebendo o link localhost da Api1.
+            var response = await client.GetAsync("https://localhost:44399/taxaJuros");//response recebe o resultado do metodo GetAsync, recebendo o link localhost da Api1.
             var content = await response.Content.ReadAsStringAsync();//serialização da requisição em uma cadeia de strings.
             var api1return = new Juros(); // api1reurn sendo chamada, um objeto tipo Juros
             api1return = JsonConvert.DeserializeObject<Juros>(content); //Deserialização da cadeia de strings em objeto tipo Juros.

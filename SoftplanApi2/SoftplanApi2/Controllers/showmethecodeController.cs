@@ -3,7 +3,7 @@ using SoftplanApi2.Models;
 
 namespace SoftplanApi2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class showmethecodeController : ControllerBase
     {

@@ -5,7 +5,7 @@ using SoftplanApi1.Models;
 namespace SoftplanApi1.Controllers
 {
 
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class taxaJurosController : ControllerBase
     {

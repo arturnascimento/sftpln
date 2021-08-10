@@ -24,7 +24,7 @@ namespace SoftplanApi2Test
         public static async Task<Juros> GetJuros()
         {
             HttpClient client = new HttpClient();
-            var response = await client.GetAsync("https://localhost:44399/api/taxaJuros");
+            var response = await client.GetAsync("https://localhost:44399/taxaJuros");
             var content = await response.Content.ReadAsStringAsync();
             var api1return = new Juros();
             api1return = JsonConvert.DeserializeObject<Juros>(content);
